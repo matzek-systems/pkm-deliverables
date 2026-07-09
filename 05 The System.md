@@ -107,7 +107,7 @@ Five mechanisms, all editable plain text:
 1. **Sandbox.** Writes to knowledge and reference folders are blocked.
 2. **Destructive command blocking.** Git history rewrites, force pushes, and hard resets are blocked before they execute.
 3. **Auto-commit.** Every file change is committed to Git with a contextual message. Every action is reversible.
-4. **Pre-compact snapshot.** Before context compression, working state is saved to disk.
+4. **Governance snapshots.** Before any destructive operation and at session close, a timestamped copy of your governance files is written to disk.
 5. **Completion enforcement.** Multi-step skills track which phases completed via filesystem markers. Nothing gets silently skipped.
 
 Remote Git backup pushes automatically when a session ends.
@@ -212,7 +212,7 @@ Complex workflows are the most likely to get steps skipped under pressure. Close
 | Bash sandbox | Blocks destructive Git commands. |
 | Auto-commit | Commits every file change with a contextual message. |
 | Auto-sync | Pushes changes to remote backup at session end. Startup pulls and reconciles. |
-| Pre-compact | Snapshots working state before context compression. |
+| Governance snapshot | Saves a timestamped copy of governance files before destructive operations and at session close. |
 
 ## Plugins
 
