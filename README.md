@@ -1,5 +1,11 @@
 # The Knowledge System — Documentation
 
+> **This repository is superseded and no longer updated.**
+> These seven documents now ship inside the system itself, at
+> `02_Projects/System Setup/Deliverables/` in
+> [matzek-systems/pkm-vault](https://github.com/matzek-systems/pkm-vault).
+> Read them there - this copy is frozen and may be out of date.
+
 Buyer documentation for The Knowledge System. These seven documents explain how the system works, from installation through advanced use.
 
 Read them in order — each builds on concepts from the one before it.
